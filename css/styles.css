@@ -1,0 +1,144 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+/* element styles */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #4a4a4a;
+}
+h1 {
+  padding: 5vw 0;
+}
+h2 {
+  padding: 15vw 0;
+  font-size: 5vw;
+}
+
+li {
+  list-style: none;
+}
+
+li img {
+  width: 85vw;
+  height: auto;
+}
+
+figcaption {
+  font-size: 6vw;
+  text-transform: capitalize;
+  padding: 8vw 0 3vw 0;
+  font-weight: 600;
+}
+strong {
+  margin-left: 3vw;
+}
+
+.disp-flex {
+  display: flex;
+}
+.width-90vw {
+  width: 90vw;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.font-4vw {
+  font-size: 4vw;
+}
+.center-text {
+  text-align: center;
+}
+.no-underline {
+  text-decoration: none;
+}
+.bold-font {
+  font-weight: 800;
+}
+.bio {
+  margin: 15vw auto;
+}
+
+footer p {
+  font-size: 4.5vw;
+}
+.bio p {
+  margin: 10vw 2.5vw 0 2.5vw;
+}
+
+.contact-list p {
+  padding-bottom: 5vw;
+}
+
+footer a {
+  color: inherit;
+}
+
+.std-paragraph {
+  margin: 0 7vw;
+  padding-bottom: 10vw;
+}
+
+.bio img {
+  width: 70vw;
+  height: auto;
+}
+
+.center-col {
+  align-items: center;
+  flex-direction: column;
+}
+.main-nav a {
+  width: 100%;
+  display: inline-block;
+  margin: 1vw 0;
+  padding: 2vw 0;
+  align-items: center;
+  flex-direction: center;
+  color: inherit;
+  background-color: white;
+}
+#portfolio-section {
+  background-color: white;
+  padding-bottom: 8vw;
+}
+
+#footer-section {
+  justify-content: space-between;
+  padding: 10vw 5vw;
+}
+
+#contact-section h2 {
+  margin-top: 2vw;
+  margin-bottom: -7vw;
+}
+
+.contact-list {
+  border-bottom: 1px solid lightgray;
+  margin: 0 auto;
+  padding-bottom: 20vw;
+}
+
+@media screen and (min-device-width: 768px) {
+  h1 {
+    color: green;
+  }
+
+  .main-nav a {
+    width: 100%;
+    /* display: inline-block; */
+    margin: 1vw 0;
+    padding: 2vw 0;
+    color: inherit;
+    background-color: white;
+    flex-direction: row;
+  }
+}

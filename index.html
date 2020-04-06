@@ -17,10 +17,10 @@ student name link to top of page -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Matt G Rocks</title>
     <!-- style sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -31,13 +31,15 @@ student name link to top of page -->
     <!-- ------------- -->
     <!-- HEADER START  -->
     <!-- ------------- -->
-    <header id="header-section">
+    <header id="header-section" class="disp-flex center-col">
       <h1>Matt Geckley</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#header-section">home</a></li>
-          <li><a href="#portfolio-section">portfolio</a></li>
-          <li><a href="#contact-section">contact</a></li>
+      <nav class="main-nav width-90vw">
+        <ul class="bold-font uppercase font-4vw center-text">
+          <li><a href="#header-section" class="no-underline">home</a></li>
+          <li>
+            <a href="#portfolio-section" class="no-underline">portfolio</a>
+          </li>
+          <li><a href="#contact-section" class="no-underline">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -48,8 +50,8 @@ student name link to top of page -->
     <!-- ------------- -->
     <!-- MAIN START -->
     <!-- ------------- -->
-    <main>
-      <section class="bio">
+    <main class="center-text">
+      <section class="bio width-90vw center-text">
         <img
           src="images/responsive-layout-profile.png"
           alt="illustrated profile picture"
@@ -69,10 +71,10 @@ student name link to top of page -->
       <!-- PORTFOLIO START -->
       <!-- ------------- -->
       <section id="portfolio-section">
-        <h2>portfolio</h2>
+        <h2 class="uppercase">portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-card">
-            <figure>
+            <figure class="disp-flex center-col">
               <img src="images/portfolio-1.png" />
               <figcaption>marketing page</figcaption>
               <p class="std-paragraph">
@@ -82,7 +84,7 @@ student name link to top of page -->
             </figure>
           </li>
           <li class="portfolio-card">
-            <figure>
+            <figure class="disp-flex center-col">
               <img src="images/portfolio-2.png" />
               <figcaption>search page</figcaption>
               <p class="std-paragraph">
@@ -92,7 +94,7 @@ student name link to top of page -->
             </figure>
           </li>
           <li class="portfolio-card">
-            <figure>
+            <figure class="disp-flex center-col">
               <img src="images/portfolio-3.png" />
               <figcaption>travel app</figcaption>
               <p class="std-paragraph">
@@ -102,7 +104,7 @@ student name link to top of page -->
             </figure>
           </li>
           <li class="portfolio-card">
-            <figure>
+            <figure class="disp-flex center-col">
               <img src="images/portfolio-4.png" />
               <figcaption>map of favorite spots</figcaption>
               <p class="std-paragraph">
@@ -112,7 +114,7 @@ student name link to top of page -->
             </figure>
           </li>
           <li class="portfolio-card">
-            <figure>
+            <figure class="disp-flex center-col">
               <img src="images/portfolio-5.png" />
               <figcaption>photo gallery</figcaption>
               <p class="std-paragraph">
@@ -122,7 +124,7 @@ student name link to top of page -->
             </figure>
           </li>
           <li class="portfolio-card">
-            <figure>
+            <figure class="disp-flex center-col">
               <img src="images/portfolio-6.png" />
               <figcaption>calulator</figcaption>
               <p class="std-paragraph">
@@ -141,12 +143,12 @@ student name link to top of page -->
       <!-- CONTACT START -->
       <!-- ------------- -->
       <section id="contact-section">
-        <h2>contact</h2>
+        <h2 class="uppercase">contact</h2>
         <p class="std-paragraph">
           If you're interested in chatting or want more information about what
           I've been working on, I'd love to hear from you!
         </p>
-        <ul class="contact-list">
+        <ul class="contact-list width-90vw">
           <!-- twitter -->
           <li>
             <p>Twitter<strong>@codesgeck</strong></p>
@@ -168,9 +170,13 @@ student name link to top of page -->
     <!-- ------------- -->
     <!-- FOOTER START -->
     <!-- ------------- -->
-    <footer id="footer-section">
+    <footer id="footer-section" class="disp-flex bold-font">
       <p class="footer-block">Matt Geckley</p>
-      <a class="footer-block" href="#header-section">back to top</a>
+      <a
+        class="footer-block uppercase font-4vw no-underline"
+        href="#header-section"
+        >back to top</a
+      >
     </footer>
     <!-- ------------- -->
     <!-- FOOTER END -->
