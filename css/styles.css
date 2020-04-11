@@ -174,12 +174,6 @@ footer a {
 
   /* portfolio area */
 
-  figure {
-    /* width: 20vw; */
-    /* margin: auto; */
-    /* padding: 0; */
-  }
-
   h2 {
     font-size: 2vw;
     padding: 7vw;
@@ -192,31 +186,16 @@ footer a {
   .std-paragraph {
     margin: 0 auto;
     width: 80%;
-    /* font-size: 2vw; */
-    /* padding: ; */
     height: 12vw;
     margin-bottom: 3vw;
   }
 
   figure img {
     width: 45.25vw;
-    /* height: auto; */
-  }
-  #portfolio-section {
-    /* margin: 0 3.5vw; */
-  }
-  figcaption {
-    /* font-size: 2.5vw; */
-    /* padding: 2.5vw; */
-    /* width: 45vw; */
   }
 
-  .portfolio-card {
-    /* width: 40vw; */
-  }
   .portfolio-list li:nth-child(odd) {
     float: left;
-    /* padding-left: 6vw; */
     padding-left: 3vw;
 
     width: 50vw;
@@ -226,7 +205,6 @@ footer a {
     width: 50vw;
 
     padding-right: 3vw;
-    /* border: 2px solid blue; */
   }
 
   /* footer  */
@@ -267,16 +245,12 @@ footer a {
     font-size: 2vw;
     justify-content: flex-end;
     margin-right: -3vw;
-    /* align-self: flex-start; */
   }
   #footer-section {
     padding: 4vw;
     padding-bottom: 10vw;
   }
 
-  /* #footer-section .std-paragraph {
-    margin: 0 auto;
-  } */
   footer p {
     font-size: 2.5vw;
     width: 40vw;
@@ -288,64 +262,37 @@ footer a {
 }
 
 @media screen and (min-device-width: 1024px) {
-  .bio:after,
-  #portfolio-section:after {
+  /* CLEAR FLOAT-BASED TWO COLLUMN LAYOUT  */
+  .portfolio-list li:nth-child(odd) {
+    float: none;
+    padding-left: 0;
+  }
+  .portfolio-list li:nth-child(even) {
+    float: none;
+    padding-right: 0;
+  }
+  .bio:after {
     content: "";
-    display: none;
-    clear: none;
+    display: table;
+    clear: both;
   }
 
-  /* portfolio area */
+  /* MAKE PORTFOLIO CARDS FUN-SIZED  */
+
+  .portfolio-list li:nth-child(odd) {
+    width: 33%;
+  }
+  .portfolio-list li:nth-child(even) {
+    width: 33%;
+  }
 
   figure img {
     width: 33vw;
   }
-  figcaption {
-    font-size: 2vw;
-  }
-  .std-paragraph {
-    font-size: 1vw;
-  }
-  .portfolio-card {
-    width: 30vw;
-  }
-  .portfolio-list li:nth-child(odd) {
-    float: none;
-  }
-  .portfolio-list li:nth-child(even) {
-    float: none;
-    /* border: 2px solid red; */
-  }
 
-  /* footer  */
-  .back-to-top {
-    display: none;
-  }
-
-  /* ul {
+  /* SET UP FLEXBOX CONTAINER  */
+  #portfolio-section ul {
     display: flex;
     flex-wrap: wrap;
-  } */
-  ul li {
-    display: block;
-    width: 10vw;
-  }
-
-  #portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #portfolio-list ul li {
-    display: block;
-    width: 10vw;
-  }
-
-  .contact-list li {
-    width: 100%;
-  }
-
-  h1 {
-    padding-bottom: 2vw;
   }
 }
