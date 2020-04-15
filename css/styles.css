@@ -130,6 +130,15 @@ footer a {
   overflow: visible;
 }
 
+#footer-nav {
+  display: none;
+}
+
+.flex-center {
+  align-content: center;
+  flex-direction: column;
+}
+
 @media screen and (min-device-width: 768px) {
   /* ----- HEADER AREA START -----  */
   h1 {
@@ -259,6 +268,10 @@ footer a {
   .contact-list p {
     padding-bottom: 3vw;
   }
+  /* footer  */
+  #back-to-top {
+    display: none;
+  }
 }
 
 @media screen and (min-device-width: 1024px) {
@@ -280,19 +293,121 @@ footer a {
   /* MAKE PORTFOLIO CARDS FUN-SIZED  */
 
   .portfolio-list li:nth-child(odd) {
-    width: 33%;
+    width: 29%;
   }
   .portfolio-list li:nth-child(even) {
-    width: 33%;
+    width: 29%;
   }
-
   figure img {
-    width: 33vw;
+    width: 29vw;
   }
 
   /* SET UP FLEXBOX CONTAINER  */
   #portfolio-section ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* SET MARGIN FOR PORT' SECT' LI's  */
+  .portfolio-list li {
+    margin: 0 1.5vw 2vw 1.5vw;
+  }
+
+  /* CLEAN UP THE HEADER */
+  #header-section {
+    width: 90vw;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    /* flex-direction: row; */
+  }
+
+  .main-nav ul {
+    font-size: 1.5vw;
+    /* display: inline; */
+    font-weight: 700;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    margin-right: -1.5vw;
+    margin-top: 1.25vw;
+    /* align-items: baseline; */
+  }
+
+  .main-nav li {
+    display: inline-block;
+    padding: 0 1.5vw;
+  }
+
+  h1 {
+    width: 100%;
+    display: inline;
+  }
+  .main-nav a {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* align-items: center;
+    flex-direction: center; */
+    color: inherit;
+    background-color: ;
+  }
+
+  h1 {
+    padding: 0;
+    font-size: 2.5vw;
+  }
+  .header-div {
+    width: 90vw;
+    padding-top: 5vw;
+  }
+  .bio {
+    margin: 5vw auto 5vw auto;
+  }
+  .bio p {
+    font-size: 2.25vw;
+  }
+
+  /* portfolio-section  */
+  #portfolio-section {
+    background-color: transparent;
+  }
+  #portfolio-section ul {
+    background-color: white;
+    overflow: visible;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  #portfolio-section h2 {
+    background-color: white;
+    margin: 0 2.5vw;
+  }
+
+  .std-paragraph {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    font-size: 2vw;
+    padding: 2.5vw 0 1.5vw 0vw;
+  }
+
+  #contact-section .std-paragraph {
+    width: 60%;
+    font-size: 2.25vw;
+  }
+
+  #contact-section p {
+    font-size: 2.25vw;
+  }
+
+  #footer-section {
+    padding-bottom: 4vw;
+  }
+
+  #footer-section nav ul {
+    margin-right: 0;
   }
 }
