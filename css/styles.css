@@ -103,7 +103,6 @@ footer a {
   margin: 1vw 0;
   padding: 2vw 0;
   align-items: center;
-  flex-direction: center;
   color: inherit;
   background-color: white;
 }
@@ -144,7 +143,7 @@ footer a {
   flex-direction: column;
 }
 
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   /* ----- HEADER AREA START -----  */
   h1 {
     padding-bottom: 2vw;
@@ -279,7 +278,7 @@ footer a {
   }
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   /* CLEAR FLOAT-BASED TWO COLLUMN LAYOUT  */
   .portfolio-list li:nth-child(odd) {
     float: none;
