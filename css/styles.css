@@ -142,7 +142,16 @@ footer a {
   align-content: center;
   flex-direction: column;
 }
-
+.figure-text {
+  padding-bottom: 10vw;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 3vw;
+  font-weight: normal;
+  padding-top: 1.5vw;
+  height: 14vw;
+}
 @media screen and (min-width: 768px) {
   /* ----- HEADER AREA START -----  */
   h1 {
@@ -206,9 +215,25 @@ footer a {
     height: 12vw;
     margin-bottom: 3vw;
   }
+  figcaption p {
+    margin: 0 auto;
+    width: 80%;
+    height: 12vw;
+    margin-bottom: 3vw;
+  }
 
   figure img {
     width: 45.25vw;
+  }
+
+  .figure-text {
+    padding-bottom: 10vw;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2vw;
+    font-weight: normal;
+    padding-top: 1.5vw;
   }
 
   .portfolio-list li:nth-child(odd) {
