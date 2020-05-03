@@ -240,11 +240,11 @@ footer a {
     float: left;
     padding-left: 3vw;
 
-    width: 50vw;
+    width: 45vw;
   }
   .portfolio-list li:nth-child(even) {
     float: right;
-    width: 50vw;
+    width: 45vw;
 
     padding-right: 3vw;
   }
